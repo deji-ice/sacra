@@ -1,0 +1,108 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+h1, h3{
+  margin: 0
+}
+.fuel, .mileage, .safety{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+img {
+  width: 29rem;
+  object-fit: cover;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #b4b597;
+  width: fit-content;
+  align-items: center;
+}
+
+.tag {
+  background: red;
+  color: white;
+  width: fit-content;
+  padding: 0.3rem;
+  border-radius: 10px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+}
+.product-description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+  padding: 1rem;
+  padding-bottom: 2rem ;
+  
+}
+
+.pricing {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.red {
+  background: red;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+}
+
+.black {
+  background: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+}
+.colors {
+  display: flex;
+  gap: 8px;
+}
+.colors-price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.gray {
+  background: grey;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+}
+
+.button-text{
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+ 
+}
+#button{
+  background: black;
+  border:  none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#feedback{
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
