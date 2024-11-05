@@ -65,5 +65,61 @@ console.log("before:", imgElement.getAttribute("height"));
 imgElement.setAttribute("height", "100");
 console.log("after:", imgElement.getAttribute("height"));
 
+// Get the first h1 element and apply various styles to it, then log the styles to the console
 const header = document.querySelector("h1");
-console.log(header)
+
+// Apply styles to the header element
+header.style.textTransform = "uppercase";
+header.style.fontSize = "2rem";
+header.style.padding = "1rem";
+header.style.border = "1px solid black";
+header.style.borderRadius = "5px";
+header.style.textAlign = "center";
+
+// Log the applied styles to the console
+console.log(header.style);
+
+// Reset the color style of the header element
+header.style.color = "";
+
+console.log(header.className);
+
+header.className = "title";
+
+const jollofParagraph = document.getElementById("jollof");
+jollofParagraph.classList.add("test", "nigerian");
+jollofParagraph.classList.remove("test");
+jollofParagraph.classList.replace("nigerian", "american");
+console.log(jollofParagraph.classList.contains("american"));
+console.log(jollofParagraph.classList.contains("nigerian"));
+console.log(jollofParagraph.classList);
+
+// Get the element with the ID "italics" and log its parent and grandparent nodes to the console
+const italicizedText = document.getElementById("italics");
+console.log(italicizedText.parentNode);
+console.log(italicizedText.parentNode.parentNode);
+
+// Get the element with the ID "container"
+const container = document.getElementById("container");
+
+// Get the children of the container element and log them to the console
+const containerChildren = container.children;
+console.log(containerChildren);
+
+// Get all child nodes of the container element (including text nodes) and log them to the console
+const containerChildNodes = container.childNodes;
+console.log(containerChildNodes);
+
+// Get the button element with the ID "myButton" and log it to the console
+const myButton = document.getElementById("myButton");
+console.log(myButton);
+
+// Add a click event listener to the button that shows an alert when clicked
+myButton.addEventListener("click", () => {
+  alert("Button clicked");
+});
+
+// Add an oncopy event handler to the header element that shows an alert when text is copied
+header.oncopy = () => {
+  alert("You copied the text");
+};
